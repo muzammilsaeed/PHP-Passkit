@@ -3,7 +3,7 @@ class PKValidate {
 	var $PKTypes = array('boardingPass', 'coupon', 'eventTicket', 'generic', 'storeCard');
 	var $PKFields = array('headerFields', 'primaryFields', 'secondaryFields', 'auxiliaryFields', 'backFields');
 	var $PKTransitTypes = array('PKTransitTypeAir', 'PKTransitTypeTrain', 'PKTransitTypeBus', 'PKTransitTypeBoat', 'PKTransitTypeGeneric');
-	var $PKBarcodeFormats = array('PKBarcodeFormatQR', 'PKBarcodeFormatPDF417', 'PKBarcodeFormatAztec', 'PKBarcodeFormatText');
+	var $PKBarcodeFormats = array('PKBarcodeFormatQR', 'PKBarcodeFormatPDF417', 'PKBarcodeFormatAztec');
 	var $PKTextAlignments = array('PKTextAlignmentLeft', 'PKTextAlignmentCenter', 'PKTextAlignmentRight', 'PKTextAlignmentJustified', 'PKTextAlignmentJustified');
 	
 	function validate($filePath){	
