@@ -105,7 +105,7 @@ class PKTemplate {
 	
 	function getPassType(){
 		foreach($this->PKTypes as $type){
-			if($this->templateContent->{$type}){
+			if(isset($this->templateContent->{$type})){
 				return $type;
 			}
 		}
