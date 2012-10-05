@@ -3,15 +3,16 @@ require('PKPass.php');
 
 $pass = new PKPass();
 
-$pass->setCertificate('../Certificate.p12'); // Set the path to your Pass Certificate (.p12 file)
-$pass->setCertificatePassword('test123'); // Set password for certificate
+$pass->setCertificate('../Certificate.p12');  // Set the path to your Pass Certificate (.p12 file)
+$pass->setCertificatePassword('test123');     // Set password for certificate
+$pass->setWWDRcertPath('../AppleWWDRCA.pem'); // Set the path to your WWDR Intermediate certificate (.pem file)
 
 $pass->setJSON('{ 
-    "passTypeIdentifier": "pass.nl.mijnbc.test",
+    "passTypeIdentifier": "pass.com.apple.test",
     "formatVersion": 1,
-    "organizationName": "Bernardinuscollege",
-    "serialNumber": "1234564",
-    "teamIdentifier": "AGKMBZTN3K",
+    "organizationName": "Flight Express",
+    "serialNumber": "123456",
+    "teamIdentifier": "AGK5BZEN3E",
     "backgroundColor": "rgb(107,156,196)",
     "logoText": "Flight info",
     "description": "Demo pass",
@@ -63,4 +64,3 @@ $pass->addFile('images/icon@2x.png');
 $pass->addFile('images/logo.png');
 
 $pass->create(true); // Create and output the PKPass
-?>
