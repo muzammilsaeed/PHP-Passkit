@@ -1,5 +1,5 @@
 # PHP PKValidate class for iOS 6 Passbook
-This class provides the functionality to validate any errors in an pass.json file, to be able to catch them before serving the pass to the user or for easier debugging. 
+This class provides the functionality to validate any errors in an pass.json file, to be able to catch them before serving the pass to the user or for easier debugging.
 
 The validation is probably far from complete, but I'm working on adding new errors. If you've got any suggestions, let me know, or add them yourself if you would like to.
 
