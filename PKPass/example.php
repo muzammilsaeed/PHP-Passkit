@@ -7,7 +7,7 @@ $pass->setCertificate('../Certificate.p12');  // Set the path to your Pass Certi
 $pass->setCertificatePassword('test123');     // Set password for certificate
 $pass->setWWDRcertPath('../AppleWWDRCA.pem'); // Set the path to your WWDR Intermediate certificate (.pem file)
 
-$pass->setJSON('{ 
+$pass->setJSON('{
     "passTypeIdentifier": "pass.com.apple.test",
     "formatVersion": 1,
     "organizationName": "Flight Express",
